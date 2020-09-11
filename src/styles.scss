@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+$primary: rgb(111, 0, 255);
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1100px;
+  padding: 0 .5rem;
+  width: 80%;
+  @media screen and (max-width: 1375px) {
+    width: 100%;
+  }
+  margin: 0 auto;
+}
+
+header {
+  background: $primary;
+  padding: 1rem 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a.logo {
+    font-weight: bold;
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    > i {
+      margin-right: 4px;
+    }
+  }
+
+  nav {
+    float: right;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      display: flex;
+
+      li a {
+        padding: 1em;
+
+        &:hover {
+          background: darken($primary, 10%);
+        }
+      }
+    }
+  }
+
+  h1 {
+    margin-top: 2em;
+  }
+}
